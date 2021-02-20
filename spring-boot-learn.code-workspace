@@ -2,7 +2,15 @@
   "folders": [
     {
       "path": "spring-boot-first"
+    },
+    {
+      "path": "spring-boot-mybatis-generator"
+    },
+    {
+      "path": "spring-boot-mybatis-xml-resource"
     }
   ],
-  "settings": {}
+  "settings": {
+    "java.configuration.updateBuildConfiguration": "automatic"
+  }
 }
