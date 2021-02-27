@@ -8,6 +8,23 @@
     },
     {
       "path": "spring-boot-mybatis-xml-resource"
+    },
+    {
+      "path": "spring-boot-mybatis-xml-java"
+    },
+    {
+      "path": "spring-boot-mybatis-ann"
+    },
+    {
+      "path": "spring-boot-mybatis-druid"
+    },
+    {
+      "name": "spring-boot-mybatis-plus",
+      "path": "spring-boot-mybatis-plus"
+    },
+    {
+      "name": "spring-boot-mybatis-plus-generator",
+      "path": "spring-boot-mybatis-plus-generator"
     }
   ],
   "settings": {

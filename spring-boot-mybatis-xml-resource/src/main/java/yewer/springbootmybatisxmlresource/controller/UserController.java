@@ -41,12 +41,11 @@ public class UserController {
     }
 
     @GetMapping(value = "usernamesex")
-    public Object getUserByNameAndSex(@RequestParam(value = "name2", required = false, defaultValue = "yew") String name,
+    public Object getUserByNameAndSex(
+            @RequestParam(value = "name2", required = false, defaultValue = "yew") String name,
             @RequestParam(value = "sex", required = false, defaultValue = "f") String sex) {
-        return userService.getUserByNameAndSex(name,sex);
+        return userService.getUserByNameAndSex(name, sex);
     }
-
-
 
     @GetMapping(value = "alluser")
     public Object getAllUser() {
@@ -54,7 +53,7 @@ public class UserController {
     }
 
     @PutMapping(value = "user/{id}/{username}")
-    public Object putMethodName(@PathVariable("id") Long id, @PathVariable("username") String userName) {
+    public Object putUser(@PathVariable("id") Long id, @PathVariable("username") String userName) {
         User user = new User();
         user.setId(id);
         user.setUserName(userName);
@@ -64,7 +63,10 @@ public class UserController {
         return userService.insertUser(user);
     }
 
+    @PostMapping(value = "user")
+    public Object postUser(@RequestBody User user) {
 
-    
+        return userService.updateUserById(user);
+    }
 
 }

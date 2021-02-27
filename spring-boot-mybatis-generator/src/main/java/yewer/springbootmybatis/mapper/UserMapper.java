@@ -1,4 +1,4 @@
-package yewer.springbootmybatis.dao;
+package yewer.springbootmybatis.mapper;
 
 import yewer.springbootmybatis.model.User;
 

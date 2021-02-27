@@ -46,4 +46,10 @@ public class UserServiceImpl implements UserService {
         return userMapper.selectByNameAndSex(user);
     }
 
+    @Override
+    public int updateUserById(User user) {
+        
+        return userMapper.updateByPrimaryKey(user);
+    }
+
 }
