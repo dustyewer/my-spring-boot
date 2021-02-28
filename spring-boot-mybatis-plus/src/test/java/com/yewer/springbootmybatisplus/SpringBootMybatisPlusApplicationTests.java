@@ -2,6 +2,7 @@ package com.yewer.springbootmybatisplus;
 
 import java.util.List;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.yewer.springbootmybatisplus.mapper.UserMapper;
@@ -44,6 +45,14 @@ class SpringBootMybatisPlusApplicationTests {
 		}
 	}
 
+	@Test
+	void test03() {
+		QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+
+		queryWrapper.select("id", "user_name").eq("id", 1);
+		userService.list(queryWrapper).forEach(System.out::println);
+
+	}
 
 	@Test
 	void test04() {

@@ -25,6 +25,10 @@
     {
       "name": "spring-boot-mybatis-plus-generator",
       "path": "spring-boot-mybatis-plus-generator"
+    },
+    {
+      "name": "spring-boot-mybatis-mulidatasource",
+      "path": "spring-boot-mybatis-mulidatasource"
     }
   ],
   "settings": {

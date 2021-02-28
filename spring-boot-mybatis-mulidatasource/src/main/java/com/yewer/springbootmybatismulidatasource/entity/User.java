@@ -1,7 +1,5 @@
-package com.yewer.springbootmybatisplus.test_mybatis_plus.entity;
+package com.yewer.springbootmybatismulidatasource.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -20,10 +18,6 @@ public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    /**
-     * 主键id
-     */
-    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     /**
@@ -39,6 +33,5 @@ public class User implements Serializable {
     private String userSex;
 
     private String nickName;
-
 
 }
