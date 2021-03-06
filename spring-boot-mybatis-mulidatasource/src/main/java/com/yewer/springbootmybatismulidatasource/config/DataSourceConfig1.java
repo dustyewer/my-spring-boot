@@ -46,10 +46,10 @@ public class DataSourceConfig1 {
         return new SqlSessionTemplate(sqlSessionFactory);
     }
 
-    @Bean(name = "ds1TransactionManager")
-    @Primary
-    public DataSourceTransactionManager getTransactionManager(@Qualifier("DS1") DataSource dataSource) {
-        return new DataSourceTransactionManager(dataSource);
-    }
+    // @Bean(name = "ds1TransactionManager")
+    // @Primary
+    // public DataSourceTransactionManager getTransactionManager(@Qualifier("DS1") DataSource dataSource) {
+    //     return new DataSourceTransactionManager(dataSource);
+    // }
 
 }

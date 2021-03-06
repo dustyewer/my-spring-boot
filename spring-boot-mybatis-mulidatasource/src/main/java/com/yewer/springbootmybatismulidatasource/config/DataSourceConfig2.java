@@ -42,9 +42,10 @@ public class DataSourceConfig2 {
         return new SqlSessionTemplate(sqlSessionFactory);
     }
 
-    @Bean(name = "ds2TransactionManager")
-    public DataSourceTransactionManager getTransactionManager(@Qualifier("DS2") DataSource dataSource) {
-        return new DataSourceTransactionManager(dataSource);
-    }
+    //
+    // @Bean(name = "ds2TransactionManager")
+    // public DataSourceTransactionManager getTransactionManager(@Qualifier("DS2") DataSource dataSource) {
+    //     return new DataSourceTransactionManager(dataSource);
+    // }
 
 }

@@ -29,6 +29,22 @@
     {
       "name": "spring-boot-mybatis-mulidatasource",
       "path": "spring-boot-mybatis-mulidatasource"
+    },
+    {
+      "name": "spring-boot-servlet",
+      "path": "spring-boot-servlet"
+    },
+    {
+      "name": "spring-boot-servlet-reg",
+      "path": "spring-boot-servlet-reg"
+    },
+    {
+      "name": "spring-boot-mybatis-plus-mulidatasource",
+      "path": "spring-boot-mybatis-plus-mulidatasource"
+    },
+    {
+      "name": "spring-boot-aop",
+      "path": "spring-boot-aop"
     }
   ],
   "settings": {
