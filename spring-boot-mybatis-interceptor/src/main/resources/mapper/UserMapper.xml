@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yewer.springbootmybatisinterceptor.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.yewer.springbootmybatisinterceptor.model.User">
+    <id column="id" jdbcType="BIGINT" property="id"/>
+    <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+    <result column="pass_word" jdbcType="VARCHAR" property="passWord"/>
+    <result column="user_sex" jdbcType="VARCHAR" property="userSex"/>
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName"/>
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_name, pass_word, user_sex, nick_name
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List"/>
+    from user
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List"/>
+    from user
+  </select>
+  <select id="selectPage" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List"/>
+    from user
+  </select>
+</mapper>

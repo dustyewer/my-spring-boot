@@ -45,9 +45,17 @@
     {
       "name": "spring-boot-aop",
       "path": "spring-boot-aop"
+    },
+    {
+      "path": "spring-boot-mybatis-interceptor"
+    },
+    {
+      "name": "spring-boot-docker",
+      "path": "spring-boot-docker"
     }
   ],
   "settings": {
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "maven.view": "flat"
   }
 }
