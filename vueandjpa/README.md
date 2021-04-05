@@ -1,0 +1,3 @@
+ 
+后端解决跨域问题
+加一个 实现WebMvcConfigurer接口的配置类 实现addCorsMappings方法
